@@ -24,8 +24,8 @@ export function EnvelopeOpening({
     const timer = window.setTimeout(() => {
       completedRef.current = true;
       setExiting(true);
-      window.setTimeout(() => onComplete(), 400);
-    }, 2200);
+      window.setTimeout(() => onComplete(), 300);
+    }, 1500);
 
     return () => window.clearTimeout(timer);
   }, [opened, readyToTransition, onComplete]);
@@ -50,7 +50,7 @@ export function EnvelopeOpening({
           z-index: 100;
           min-height: 100vh;
           min-height: 100dvh;
-          transition: opacity 0.4s ease;
+          transition: opacity 0.3s ease;
         }
 
         .scene.is-exiting {
@@ -129,7 +129,7 @@ export function EnvelopeOpening({
           overflow: hidden;
           box-shadow: inset 0 0 30px rgba(30,58,138,0.05);
           transform: scale(1);
-          transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+          transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
 
         .envelope-container.is-open .card-container {
@@ -272,7 +272,7 @@ export function EnvelopeOpening({
           box-shadow: 10px 0 30px -10px rgba(0,0,0,0.4);
           transform-origin: left center;
           transform: rotateY(0deg);
-          transition: transform 1.5s cubic-bezier(0.25, 1, 0.3, 1), box-shadow 1.5s ease;
+          transition: transform 0.8s cubic-bezier(0.25, 1, 0.3, 1), box-shadow 0.8s ease;
           z-index: 5;
           border-top-right-radius: 2px;
           border-bottom-right-radius: 2px;
@@ -298,7 +298,7 @@ export function EnvelopeOpening({
           transform: translateY(-50%);
           width: 100%;
           z-index: 6;
-          transition: opacity 0.8s ease, transform 0.8s ease;
+          transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
         .envelope-container.is-open .ribbon-wrap {
