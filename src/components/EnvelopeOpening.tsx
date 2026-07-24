@@ -113,9 +113,9 @@ export function EnvelopeOpening({
         .envelope-base {
           position: absolute;
           inset: 0;
-          background: linear-gradient(145deg, #fdfbf7, #f4eee1);
+          background: linear-gradient(145deg, #1e40af, #172554);
           border-radius: 6px;
-          box-shadow: 0 30px 60px -15px rgba(176,154,183,0.3), 0 0 0 1px rgba(176,154,183,0.1);
+          box-shadow: 0 30px 60px -15px rgba(30,58,138,0.5), 0 0 0 1px rgba(30,58,138,0.3);
           z-index: 1;
         }
 
@@ -127,7 +127,7 @@ export function EnvelopeOpening({
           border-radius: 6px;
           z-index: 2;
           overflow: hidden;
-          box-shadow: inset 0 0 30px rgba(176,154,183,0.05);
+          box-shadow: inset 0 0 30px rgba(30,58,138,0.05);
           transform: scale(1);
           transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
@@ -141,7 +141,7 @@ export function EnvelopeOpening({
         .card-border {
           position: absolute;
           inset: 18px;
-          border: 1.5px solid rgba(120,97,125,0.5);
+          border: 1.5px solid rgba(30,58,138,0.5);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -154,7 +154,7 @@ export function EnvelopeOpening({
           content: '';
           position: absolute;
           inset: 7px;
-          border: 0.5px solid rgba(120,97,125,0.2);
+          border: 0.5px solid rgba(30,58,138,0.2);
         }
 
         /* Corner Ornaments */
@@ -265,11 +265,11 @@ export function EnvelopeOpening({
           left: 0;
           width: 66%;
           height: 100%;
-          background: linear-gradient(135deg, #fdfbf7 0%, #f4eee1 50%, #fdfbf7 100%);
-          background-image: linear-gradient(135deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%);
+          background: linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #1e3a8a 100%);
+          background-image: linear-gradient(135deg, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.05) 75%, transparent 75%);
           background-size: 8px 8px;
-          border-right: 1px solid rgba(120,97,125,0.15);
-          box-shadow: 10px 0 30px -10px rgba(120,97,125,0.25);
+          border-right: 1px solid rgba(255,255,255,0.15);
+          box-shadow: 10px 0 30px -10px rgba(0,0,0,0.4);
           transform-origin: left center;
           transform: rotateY(0deg);
           transition: transform 1.5s cubic-bezier(0.25, 1, 0.3, 1), box-shadow 1.5s ease;
@@ -312,13 +312,13 @@ export function EnvelopeOpening({
           height: 54px;
           background: linear-gradient(
             to bottom, 
-            #ffffff 0%, 
-            #fdfbf7 25%, 
-            #f4eee1 50%, 
-            #fdfbf7 75%, 
-            #e8dfce 100%
+            #3b82f6 0%, 
+            #1e40af 25%, 
+            #1e3a8a 50%, 
+            #1e40af 75%, 
+            #172554 100%
           );
-          box-shadow: 0 4px 6px rgba(0,0,0,0.1), inset 0 1px rgba(255,255,255,0.6);
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1), inset 0 1px rgba(255,255,255,0.2);
         }
 
         /* Bow Container */
@@ -336,7 +336,7 @@ export function EnvelopeOpening({
           width: 100%;
           height: 100%;
           object-fit: contain;
-          filter: drop-shadow(0 6px 8px rgba(0,0,0,0.15)) sepia(0.3) saturate(0.7) brightness(1.1) hue-rotate(350deg);
+          filter: drop-shadow(0 6px 8px rgba(0,0,0,0.25)) sepia(1) hue-rotate(185deg) saturate(3.5) brightness(0.6);
           transform: scale(1.6);
         }
 
@@ -345,7 +345,7 @@ export function EnvelopeOpening({
           bottom: -60px;
           left: 50%;
           transform: translateX(-50%);
-          color: #b89645;
+          color: #1e3a8a;
           font-family: "Montserrat", sans-serif;
           font-size: 10px;
           letter-spacing: 0.35em;
@@ -450,9 +450,9 @@ export function EnvelopeOpening({
               </div>
 
               <h1 className="text-names">
-                Apsara
+                Amantha
                 <span className="text-ampersand">&</span>
-                Teshan
+                Kushani
               </h1>
 
               <div className="divider">
@@ -464,8 +464,8 @@ export function EnvelopeOpening({
               <div className="text-details">
                 Request the honour of your presence<br />
                 to celebrate their marriage at<br />
-                <span className="text-church">Centrium Ballroom, Avenra Gardens</span><br />
-                Negombo
+                <span className="text-church">Hotel Green Court, Dukes lounge</span><br />
+                Homagama
               </div>
             </div>
           </div>

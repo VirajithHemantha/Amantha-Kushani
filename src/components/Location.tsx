@@ -9,22 +9,13 @@ interface LocationProps {
 export const Location: React.FC<LocationProps> = ({ event = 'both' }) => {
   const venues = [
     {
-      id: 'ceremony',
-      name: "St. Mary's Church",
-      city: "Negombo",
-      quote: `"A beautiful and sacred place where we will unite in holy matrimony."`,
-      liveLocationUrl: "https://maps.app.goo.gl/kPtBACZFd3AcKa1u9",
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Negombo%2C_St._Mary%27s_Church%2C_2025-07_CN-02.jpg",
-      label: "The Ceremony"
-    },
-    {
-      id: 'reception',
-      name: "Centrium Ballroom, Avenra Gardens",
-      city: "Negombo",
-      quote: `"A serene and elegant setting where we will celebrate our wedding function with joy and laughter."`,
-      liveLocationUrl: "https://maps.app.goo.gl/3HPomRVMHdbHUbo86",
-      imageUrl: "https://www.aha.lk/img/projects/1%20%281%291565002653.jpg",
-      label: "The Reception"
+      id: 'venue',
+      name: "Hotel Green Court (Dukes lounge)",
+      city: "Homagama",
+      quote: `"A beautiful and serene setting where we will unite and celebrate our love."`,
+      liveLocationUrl: "https://maps.app.goo.gl/rU2QaJgFocyJFre98",
+      imageUrl: "/ChatGPT Image Jul 5, 2026, 02_20_06 AM.png",
+      label: "The Venue"
     }
   ];
 
@@ -108,20 +99,16 @@ export const Location: React.FC<LocationProps> = ({ event = 'both' }) => {
                 <div className="absolute -inset-4 sm:-inset-6 border-[2px] border-brand-lavender/30 rounded-[3rem] -z-10 translate-x-2 sm:translate-x-4 translate-y-2 sm:translate-y-4" />
                 
                 <div className="w-full h-full rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] relative group/map">
-                  {/* Image Placeholder Masking for premium feel */}
-                  <div className="absolute inset-0 bg-brand-lavender/10 mix-blend-multiply pointer-events-none z-20 group-hover/map:opacity-0 transition-opacity duration-1000" />
-                  
-                  <img
-                    src={venue.imageUrl}
-                    alt={`${venue.name} Location`}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-in-out group-hover/map:scale-105"
-                  />
-
-                  {/* Decorative Location Pin Overlay */}
-                  <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-lavender/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
-                    <Map className="w-4 h-4 text-brand-plum animate-pulse" />
-                    <span className="text-[9px] uppercase tracking-widest font-bold text-stone-600">Live Map</span>
-                  </div>
+                  <iframe
+                    title={`${venue.name} Map`}
+                    src="https://maps.google.com/maps?q=Hotel%20Green%20Court%20Homagama&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    className="absolute inset-0 w-full h-full border-0"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </motion.div>
 
