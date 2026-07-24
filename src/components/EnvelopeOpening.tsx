@@ -312,13 +312,13 @@ export function EnvelopeOpening({
           height: 54px;
           background: linear-gradient(
             to bottom, 
-            #3b82f6 0%, 
-            #1e40af 25%, 
-            #1e3a8a 50%, 
-            #1e40af 75%, 
-            #172554 100%
+            #7a97c5 0%, 
+            #5877a6 20%, 
+            #395379 50%, 
+            #5877a6 80%, 
+            #324b70 100%
           );
-          box-shadow: 0 4px 6px rgba(0,0,0,0.1), inset 0 1px rgba(255,255,255,0.2);
+          box-shadow: 0 6px 12px rgba(0,0,0,0.3), inset 0 2px 4px rgba(255,255,255,0.4), inset 0 -2px 6px rgba(0,0,0,0.4);
         }
 
         /* Bow Container */
@@ -336,7 +336,7 @@ export function EnvelopeOpening({
           width: 100%;
           height: 100%;
           object-fit: contain;
-          filter: drop-shadow(0 6px 8px rgba(0,0,0,0.25)) sepia(1) hue-rotate(185deg) saturate(3.5) brightness(0.6);
+          filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
           transform: scale(1.6);
         }
 
@@ -478,7 +478,7 @@ export function EnvelopeOpening({
             <div className="ribbon-band"></div>
             <div className="bow-center">
               {/* Photorealistic Satin Bow Image */}
-              <img src="/ivory_satin_bow-removebg-preview.png" alt="Satin Bow" loading="eager" className="bow-image" />
+              <img src="/ChatGPT_Image_Jul_24__2026__11_23_08_PM-removebg-preview.png" alt="Satin Bow" loading="eager" className="bow-image" />
             </div>
           </div>
 
