@@ -61,7 +61,7 @@ export const CoupleDetails: React.FC = () => {
             <span className="text-brand-plum uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
             <h3 className="text-4xl sm:text-5xl font-names text-stone-800 mb-2 drop-shadow-sm">Kushani</h3>
             <p className="text-stone-700 font-century text-xs mb-2"></p>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. Jayasena & Mrs. Hemali</p>
+            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. S. H. Jayasena Perera & Mrs. P. H. S. Hemamali</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
             <Heart className="w-6 h-6 text-brand-lavender/60 fill-brand-lavender/20 transform hover:scale-110 transition-transform cursor-pointer" />

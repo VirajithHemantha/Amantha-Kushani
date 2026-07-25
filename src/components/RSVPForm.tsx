@@ -84,8 +84,8 @@ export const RSVPForm: React.FC<RSVPFormProps> = ({ inviteeName = '', eventName 
 
           <p className="text-stone-500/90 font-serif text-lg leading-relaxed mb-6">
             {inviteeName
-              ? `Dear ${inviteeName}, your presence at ${eventName} means the world to us. Please kindly let us know if you will be able to join our celebration.`
-              : `Your presence means the world to us. Please kindly let us know if you will be able to join our celebration.`
+              ? `Dear ${inviteeName}, your presence at ${eventName} means the world to us. Please let us know if you will be able to join our celebration.`
+              : `Your presence means the world to us. Please let us know if you will be able to join our celebration.`
             }
           </p>
           <div className="mt-6 mb-8 text-sm font-sans tracking-[0.2em] uppercase font-semibold text-brand-plum drop-shadow-sm leading-loose">

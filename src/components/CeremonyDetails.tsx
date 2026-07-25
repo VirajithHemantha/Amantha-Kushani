@@ -64,10 +64,7 @@ export const CeremonyDetails: React.FC<CeremonyDetailsProps> = ({ event = 'both'
                   </h4>
                   <div className="space-y-1.5 text-stone-500/90 font-serif text-base sm:text-lg">
                     <p>
-                      <span className="font-semibold text-stone-700">Poruwa Ceremony:</span> 10:28 AM
-                    </p>
-                    <p>
-                      <span className="font-semibold text-stone-700">Wedding Function:</span> 11:30 AM to 04:00 PM
+                      <span className="font-semibold text-stone-700">Wedding Reception:</span> 9:00 a.m. - 4:00 p.m.
                     </p>
                   </div>
                 </div>
